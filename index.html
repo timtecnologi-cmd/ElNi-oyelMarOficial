@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro El Niño y el Mar | Institución Oficial</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #f4f7f9;
+            --card-bg: #ffffff;
+            --primary: #0056b3; /* Azul médico institucional */
+            --verified-blue: #0095f6;
+            --text-main: #1c1e21;
+            --text-muted: #606770;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+        }
+
+        /* Contenedor Principal Estilo App Médica */
+        .official-card {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 380px;
+            padding: 30px 20px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border: 1px solid #e1e4e8;
+            position: relative;
+        }
+
+        /* ETIQUETA OFICIAL FLOTANTE */
+        .official-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #eef6ff;
+            color: var(--verified-blue);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #d0e7ff;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Escudo de la Institución */
+        .shield-icon {
+            font-size: 55px;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 5px 0;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .verified-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 5px;
+        }
+
+        .category {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* Bloque de Servicios */
+        .info-grid {
+            background: #f8fafc;
+            border: 1px solid #edf2f7;
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .info-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Botones de Acción */
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-whatsapp { background: #25D366; color: white; }
+        .btn-outline { border: 2px solid #e1e4e8; color: var(--text-main); }
+
+        .action-btn:active { transform: scale(0.97); }
+
+        /* Pie de Página Institucional */
+        .legal-footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="official-card">
+        <!-- ETIQUETA SUPERIOR -->
+        <div class="official-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z""")/>></svg>
+            Verificado
+        </div>
+
+        <div class="shield-icon">🏥</div>
+        
+        <div class="verified-name">
+            <h1>𝐄𝐥 𝐧𝐢ñ𝐨 𝐲 𝐞𝐥 𝐌𝐚𝐫</h1>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#0095f6"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z""")/>></svg>
+        </div>
+        
+        <div class="category">Centro de Atención Psicofamiliar Oficial</div>
+
+        <div class="info-grid">
+            <div class="info-item">🧠 <b>Especialidades:</b> Psiq • Psico • Fisiatría</div>
+            <div class="info-item">🧩 <b>Unidad Especializada:</b> Autismo</div>
+            <div class="info-item">📍 <b>Ubicación:</b> Catia La Mar, La Guaira</div>
+        </div>
+
+        <!-- REEMPLAZA EL TELÉFONO ABAJO -->
+        <a href="https://wa.me" class="action-btn btn-whatsapp">
+            Solicitar Cita Médica
+        </a>
+
+        <a href="https://instagram.com" class="action-btn btn-outline">
+            Perfil de Instagram
+        </a>
+
+        <div class="legal-footer">
+            <b>REGISTRO INSTITUCIONAL:</b> V-XXXXXXXX-X<br>
+            © 2024 Centro de Atención Psicofamiliar - Todos los derechos reservados.
+        </div>
+    </div>
+
+</body>
+</html>
